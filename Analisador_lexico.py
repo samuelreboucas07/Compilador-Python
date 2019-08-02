@@ -131,6 +131,7 @@ def t_newline(t):
 # RESPONSÁVEL POR IGNORAR ESPAÇOS EM BRANCO.
 t_ignore  = ' \t'
 
+# FUNÇÃO PARA DEFINIR UM CARACTERE ILEGAIS, OU SEJA, UM CARACTERE NÃO RECONHECIDO POR NENHUMA REGRA DEFINIDA.  
 def t_error(t):
     print("Illegal character '%s'" % t.value[0])
     t.lexer.skip(1)
